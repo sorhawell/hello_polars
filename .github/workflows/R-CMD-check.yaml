@@ -66,13 +66,13 @@ jobs:
           echo $RUNNER_OS
           if [ "$RUNNER_OS" == "Linux" ]
           then
-            less /home/runner/work/hello_polars/hello_polars/check/rpolars.Rcheck/00install.out
+            less /home/runner/work/hello_polars/hellopolars/check/rpolars.Rcheck/00install.out
           fi
           if [ "$RUNNER_OS" == "Windows" ]
           then
-            less D:/a/hello_polars/hello_polars/check/rpolars.Rcheck/00install.out
+            less D:/a/hello_polars/hellopolars/check/rpolars.Rcheck/00install.out
           fi
           if [ "$RUNNER_OS" == "macOS" ]
           then
-            less /home/runner/work/hello_polars/hello_polars/check/rpolars.Rcheck/00install.out
+            less /home/runner/work/hello_polars/hellopolars/check/rpolars.Rcheck/00install.out
           fi
