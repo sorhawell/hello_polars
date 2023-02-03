@@ -16,6 +16,6 @@ fn hello_world() -> &'static str {
 // This ensures exported functions are registered with R.
 // See corresponding C code in `entrypoint.c`.
 extendr_module! {
-    mod helloextendr;
+    mod hellopolars;
     fn hello_world;
 }
