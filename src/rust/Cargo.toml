@@ -9,4 +9,4 @@ name = 'helloextendr'
 
 [dependencies]
 extendr-api = '*'
-polars = "0.26.1"
+polars = '*'
