@@ -54,3 +54,26 @@ jobs:
           extra-packages: rcmdcheck
 
       - uses: r-lib/actions/check-r-package@v2
+
+
+
+
+
+      - name: print R CMD check - install log
+        shell: bash
+        env:
+          RUNNER_OS: ${{ runner.os }}
+        run: |
+          echo $RUNNER_OS
+          if [ "$RUNNER_OS" == "Linux" ]
+          then
+            less /home/runner/work/r-polars/r-polars/check/rpolars.Rcheck/00install.out
+          fi
+          if [ "$RUNNER_OS" == "Windows" ]
+          then
+            less D:/a/r-polars/r-polars/check/rpolars.Rcheck/00install.out
+          fi
+          if [ "$RUNNER_OS" == "macOS" ]
+          then
+            less /home/runner/work/r-polars/r-polars/check/rpolars.Rcheck/00install.out
+          fi
