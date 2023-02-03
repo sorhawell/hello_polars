@@ -70,7 +70,7 @@ jobs:
           fi
           if [ "$RUNNER_OS" == "Windows" ]
           then
-            less D:/a/hello_polars/hello_polars/check/hellopolars.Rcheck/00install.outk
+            less D:/a/hello_polars/hello_polars/check/hellopolars.Rcheck/00install.out
           fi
           if [ "$RUNNER_OS" == "macOS" ]
           then
